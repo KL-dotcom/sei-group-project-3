@@ -252,7 +252,7 @@ module.exports = [
     enjoyment: 5,
     photoGallery: [],
     videos: [],
-    description: 'This trip takes you across almost the entire coastline of Australia',
+    description: 'This trip takes you across almost the entire southern coastline of Australia',
     timeOfYear: 'September to November or March to May',
     highlights: ['Pink Lake', 'Bunda Cliffs', 'Apollo Bay'],
     pastTravellers: ['user123', 'fakeuser12']
@@ -359,7 +359,7 @@ module.exports = [
     timeOfYear: 'avoid the hottest months in the summer',
     highlights: ['Seeing where Game of Thrones was filmed'],
     pastTravellers: ['user123', 'fakeuser12']
-  } , {
+  }, {
     name: 'Welsh Travels',
     startingPointCity: 'London',
     startingPointState: '',
@@ -384,7 +384,7 @@ module.exports = [
     timeOfYear: 'always a good time for Wales',
     highlights: ['coasteering at Preseli Venture', 'making bespoke gin at The Welsh Wind Distillery'],
     pastTravellers: ['user123', 'fakeuser12']
-  } , {
+  }, {
     name: 'French Riviera',
     startingPointCity: 'Marseille',
     startingPointState: '',
@@ -409,7 +409,7 @@ module.exports = [
     description: 'The biggest drawcard for driving this route is to visit the stunning calanques, the majority are located between Marseille and La Ciotat and form part of a National Park. Tourism Offices can provide you with maps of the calanques including Port Pin, en Vau, Sormiou, Sugiton, Morgiou, and Figuerolles and you can follow the cliff top hiking trails to reach them. Port-Miou is the one closest to Cassis that is accessible by car.',
     highlights: ['Coast', 'French', 'Wine'],
     pastTravellers: ['user123', 'fakeuser12']
-  } , {
+  }, {
     name: 'The Mongol Rally',
     startingPointCity: 'London',
     startingPointState: '',

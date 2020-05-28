@@ -16,34 +16,34 @@ class tripsIndex extends React.Component {
   }
 
   options = [
-    { name: 'abroad', label: 'Abroad' },
-    { name: 'vineyard', label: 'Vineyard' },
-    { name: 'architecture', label: 'Architecture' },
-    { name: 'art and culture', label: 'Arts and Culture' },
-    { name: 'camping', label: 'Camping' },
-    { name: 'canyon', label: "Canyons" },
-    { name: 'car', label: 'Cars' },
-    { name: 'cities', label: 'Cities' },
-    { name: 'desert', label: 'Deserts' },
-    { name: 'fast', label: 'Fast' },
-    { name: 'forest', label: 'Forests' },
-    { name: 'friends', label: 'Friends' },
-    { name: 'gastronomy', label: 'Gastronomy' },
-    { name: 'history', label: 'History' },
-    { name: 'hostel', label: 'Hostels' },
-    { name: 'hotel', label: 'Hotels' },
-    { name: 'mechanics', label: 'Mechanics' },
-    { name: 'motorbike', label: 'Motorbike' },
-    { name: 'mountains', label: 'Mountains' },
-    { name: 'nature', label: 'Nature' },
-    { name: 'off road', label: 'Off-Road', },
-    { name: 'panoramic view', label: 'Panoramic Views' },
-    { name: 'riverside', label: 'Riversides' },
-    { name: 'rural', label: 'Rural' },
-    { name: 'sea', label: 'Sea' },
-    { name: 'solo', label: 'Solo' },
-    { name: 'sports', label: 'Sports' },
-    { name: 'straight', label: 'Straight' }
+    { value: 'abroad', label: 'Abroad' },
+    { value: 'vineyard', label: 'Vineyard' },
+    { value: 'architecture', label: 'Architecture' },
+    { value: 'art and culture', label: 'Arts and Culture' },
+    { value: 'camping', label: 'Camping' },
+    { value: 'canyon', label: "Canyons" },
+    { value: 'car', label: 'Cars' },
+    { value: 'cities', label: 'Cities' },
+    { value: 'desert', label: 'Deserts' },
+    { value: 'fast', label: 'Fast' },
+    { value: 'forest', label: 'Forests' },
+    { value: 'friends', label: 'Friends' },
+    { value: 'gastronomy', label: 'Gastronomy' },
+    { value: 'history', label: 'History' },
+    { value: 'hostel', label: 'Hostels' },
+    { value: 'hotel', label: 'Hotels' },
+    { value: 'mechanics', label: 'Mechanics' },
+    { value: 'motorbike', label: 'Motorbike' },
+    { value: 'mountains', label: 'Mountains' },
+    { value: 'nature', label: 'Nature' },
+    { value: 'off road', label: 'Off-Road', },
+    { value: 'panoramic view', label: 'Panoramic Views' },
+    { value: 'riverside', label: 'Riversides' },
+    { value: 'rural', label: 'Rural' },
+    { value: 'sea', label: 'Sea' },
+    { value: 'solo', label: 'Solo' },
+    { value: 'sports', label: 'Sports' },
+    { value: 'straight', label: 'Straight' }
   ]
 
   async componentDidMount() {
@@ -69,7 +69,7 @@ class tripsIndex extends React.Component {
     console.log('filter', selectVal, searchVal)
     const regexp = new RegExp(searchVal, 'i')
     return this.state.trips.filter(trip => (
-      (regexp.test(trip.startingPointCity) || regexp.test(trip.endPointCity)) && (selectVal?.every(tag => { return trip.tags.includes(tag.name) }) ?? true)
+      (regexp.test(trip.startingPointCity) || regexp.test(trip.endPointCity)) && (selectVal?.every(tag => { return trip.tags.includes(tag.value) }) ?? true)
     ))
   }
 

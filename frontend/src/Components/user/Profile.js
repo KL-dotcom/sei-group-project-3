@@ -1,6 +1,6 @@
 import React from 'react'
 import Modal from 'react-modal'
-import ReactTooltip from "react-tooltip"
+import ReactTooltip from 'react-tooltip'
 import { Link } from 'react-router-dom'
 import RTimage from '../../styles/assets/roadtrippers.png'
 import { icons } from "../../styles/assets/icon-data"
@@ -71,29 +71,29 @@ class Profile extends React.Component {
         borderRadius: "20px",
         padding: "20px",
         width: "60%",
+      }
     }
-  }
     const choosePicStyle = {
-        color: "whitesmoke",
-        background: "rgba(128, 128, 128, 0.5)",
-        border: "black",
-        borderRadius: "5px",
-        marginBottom: "3px"
+      color: "whitesmoke",
+      background: "rgba(128, 128, 128, 0.5)",
+      border: "black",
+      borderRadius: "5px",
+      marginBottom: "3px"
     }
     return (
       <section>
-         <div className="header">
+        <div className="header">
           <div className="header-left">
             <Link to='/'><img className="nav-logo" alt="logo" src={RTimage} height="50" /></Link>
           </div>
           <div className="header-right">
-          {isAuthenticated() && <Link to='/profile/edit'><button className="edit-your-profile" type="button">Edit Profile</button></Link> } 
+            {isAuthenticated() && <Link to='/profile/edit'><button className="edit-your-profile" type="button">Edit Profile</button></Link>}
           </div>
         </div>
 
 
-        
-        <div style={{display: "flex", justifyContent: "center"}}>
+
+        <div style={{ display: "flex", justifyContent: "center" }}>
           <Modal
             isOpen={this.state.showModal}
             contentLabel="onRequestClose Example"
@@ -107,13 +107,13 @@ class Profile extends React.Component {
               dynamicHeight={true}
             >
               {profilePhoto.map(photo =>
-              <div id={photo} key={photo} className="carousel-item">
-              {isAuthenticated() && <button style={choosePicStyle} className="choose-pic" onClick={this.handleSelectPhoto} id="currentProfPic" value={photo}>make profile pic</button>}
-                <img src={photo} alt="" className="carousel-image" />
-              </div>)}
+                <div id={photo} key={photo} className="carousel-item">
+                  {isAuthenticated() && <button style={choosePicStyle} className="choose-pic" onClick={this.handleSelectPhoto} id="currentProfPic" value={photo}>make profile pic</button>}
+                  <img src={photo} alt="" className="carousel-image" />
+                </div>)}
             </Carousel>
           </Modal>
-        </div> 
+        </div>
         <div className="cover">
           <div className="cover-left">
             <div className="cover-left-image">
@@ -180,7 +180,7 @@ class Profile extends React.Component {
               dynamicHeight={true}>
               {recentTrips.map(trip =>
                 <div key={trip} className="carousel-item">
-                   {isAuthenticated() && <button style={choosePicStyle} onClick={this.handleSelectPhoto} id="currentCoverPic" value={trip}>make cover pic</button>}
+                  {isAuthenticated() && <button style={choosePicStyle} onClick={this.handleSelectPhoto} id="currentCoverPic" value={trip}>make cover pic</button>}
                   <img src={trip}
                     alt=""
                     className="carousel-image" />

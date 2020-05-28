@@ -49,7 +49,7 @@ class tripShow extends React.Component {
   }
   handleDate = e => {
     console.log(e)
-    
+
   }
 
 
@@ -67,10 +67,10 @@ class tripShow extends React.Component {
             <Link to='/'><img className="nav-logo" alt="logo" src={RTimage} height="50" /></Link>
           </div>
           <div className="header-right">
-          {<button onClick={this.props.history.goBack} className="back-button" type="button">Back</button>} 
+            {<button onClick={this.props.history.goBack} className="back-button" type="button">Back</button>}
           </div>
-        </div>        
-        
+        </div>
+
         <section className="show-trip">
           <div className="hero">
             <div className="hero-image-container">
@@ -98,7 +98,7 @@ class tripShow extends React.Component {
             </div>
             <div className="icons">
               <div className="value">Trip tags</div>
-              {filteredIcons.map(icon => <ReactTooltip  key={icon.name} id={icon.name} place="top" effect="solid">{icon.name}</ReactTooltip>)}
+              {filteredIcons.map(icon => <ReactTooltip key={icon.name} id={icon.name} place="top" effect="solid">{icon.name}</ReactTooltip>)}
               {filteredIcons.map(icon => <label key={icon.name} data-tip data-for={icon.name}>{icon.value}</label>)}
             </div>
           </div>

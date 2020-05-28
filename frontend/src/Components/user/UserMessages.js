@@ -57,70 +57,70 @@ class UserMessages extends React.Component {
     this.setState({ pending: text })
   }
 
-render() {
-const { user } = this.state
-if (!user) return <p>Loading</p>
+  render() {
+    const { user } = this.state
+    if (!user) return <p>Loading</p>
 
-return (
-  <div>
-  <div className="header">
-  <div className="header-left">
-    <Link to='/'><img className="nav-logo" alt="logo" src={RTimage} height="50" /></Link>
-  </div>
-  <div className="header-right"></div>
-</div>
-  <section className="message">
-    <h3>Conversation between
+    return (
+      <div>
+        <div className="header">
+          <div className="header-left">
+            <Link to='/'><img className="nav-logo" alt="logo" src={RTimage} height="50" /></Link>
+          </div>
+          <div className="header-right"></div>
+        </div>
+        <section className="message">
+          <h3>Conversation between
 
       {this.filterMessages()?.sender._id === this.state.user._id
-        ? ' you '
-        : ` ${this.filterMessages().sender.username} `
+              ? ' you '
+              : ` ${this.filterMessages().sender.username} `
 
-      }
+            }
         &
         {this.filterMessages().recipient._id === this.state.user._id
-        ? ' You'
-        : ` ${this.filterMessages().recipient.username}`
+              ? ' You'
+              : ` ${this.filterMessages().recipient.username}`
 
-      } </h3>
+            } </h3>
 
-    <div className="message-body">
-      {/* <p className={
+          <div className="message-body">
+            {/* <p className={
         this.filterMessages().sender._id === this.state.user._id 
         ? 'you' 
         : 'them'
       }>{this.filterMessages()?.text}</p> */}
-      <div className="messages">
+            <div className="messages">
 
-      {this.filterMessages().comment?.map(comment => (
-        <div key={comment._id} className={comment.user === this.state.user._id ? 'you' : 'them'}>
+              {this.filterMessages().comment?.map(comment => (
+                <div key={comment._id} className={comment.user === this.state.user._id ? 'you' : 'them'}>
 
-          <p key={comment._id}>{comment.text}</p>
+                  <p key={comment._id}>{comment.text}</p>
 
-        </div>
+                </div>
 
-))}
-</div>
-
-
+              ))}
+            </div>
 
 
-    <div className="send-message">
-      <form onSubmit={this.handleSubmit} className="submit-message">
-        <textarea
-          placeholder="Write a message..."
-          className="comment-input"
-          onChange={this.handleChange}
-        />
-        <button className="comment-btn">></button>
-      </form>
-    </div>
-        </div>
-        {/* </div> */}
-  </section>
-  </div>
-)
-}
+
+
+            <div className="send-message">
+              <form onSubmit={this.handleSubmit} className="submit-message">
+                <textarea
+                  placeholder="Write a message..."
+                  className="comment-input"
+                  onChange={this.handleChange}
+                />
+                <button className="comment-btn">></button>
+              </form>
+            </div>
+          </div>
+          {/* </div> */}
+        </section>
+      </div>
+    )
+  }
 }
 
 export default UserMessages

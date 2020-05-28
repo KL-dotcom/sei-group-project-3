@@ -99,16 +99,16 @@ class PublicProfile extends React.Component {
         borderRadius: "20px",
         padding: "20px",
         width: "60%",
+      }
     }
-  }
     return (
       <section>
-         <div className="header">
+        <div className="header">
           <div className="header-left">
             <Link to='/'><img className="nav-logo" alt="logo" src={RTimage} height="50" /></Link>
           </div>
           <div className="header-right">
-          {<button onClick={this.props.history.goBack} className="back-button" type="button">Back</button>} 
+            {<button onClick={this.props.history.goBack} className="back-button" type="button">Back</button>}
           </div>
         </div>
         <div>
@@ -173,17 +173,13 @@ class PublicProfile extends React.Component {
               {isAuthenticated() ?
                 <form onSubmit={this.handleSubmit}>
                   <div className="add-message">
-                    {/* <textarea
-                      placeholder="Start a new Conversation"
-                      onChange={this.handleChange}
-                      className="comment-input"
-                    /> */}
+
                     <button className="message-btn">Start a Conversation</button>
                   </div>
                 </form>
                 : <p className="message-holder">Please login to start a conversation</p>}
 
-              {/* <button>Follow</button> */}
+
             </div>
           </div>
           <div className="caro-div">

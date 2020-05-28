@@ -16,26 +16,26 @@ class TripNew extends React.Component {
       image: '',
       tags: [],
       description: '',
-      startingPointCity:'London',
-      startingPointState:'',
-      startingPointCountry:'GB',
-      endPointCity:'London',
-      endPointState:'',
-      endPointCountry:'GB',
+      startingPointCity: 'London',
+      startingPointState: '',
+      startingPointCountry: 'GB',
+      endPointCity: 'London',
+      endPointState: '',
+      endPointCountry: 'GB',
       scenery: '',
       enjoyment: '',
-      distance:'',
-      timeOfYear:'',
-      highlights:''
+      distance: '',
+      timeOfYear: '',
+      highlights: ''
     },
     errors: {},
     tempTrip: {
-      startingPointCity:'',
-      startingPointState:'',
-      startingPointCountry:'',
-      endPointCity:'',
-      endPointState:'',
-      endPointCountry:'',
+      startingPointCity: '',
+      startingPointState: '',
+      startingPointCountry: '',
+      endPointCity: '',
+      endPointState: '',
+      endPointCountry: '',
     }
   }
 
@@ -60,12 +60,12 @@ class TripNew extends React.Component {
 
   handleMapChange = e => {
     const tempTrip = { ...this.state.tempTrip, [e.target.name]: e.target.value }
-    this.setState({ tempTrip }) 
+    this.setState({ tempTrip })
   }
 
   handleTripSearch = () => {
-    const finalTrip = {...this.state.tempTrip}
-    const formData = {...this.state.formData , ...finalTrip}
+    const finalTrip = { ...this.state.tempTrip }
+    const formData = { ...this.state.formData, ...finalTrip }
     // console.log(state)
     this.setState({ formData })
   }
@@ -104,7 +104,7 @@ class TripNew extends React.Component {
             <Link to='/'><img className="nav-logo" alt="logo" src={RTimage} height="50" /></Link>
           </div>
           <div className="header-right">
-          {<button onClick={this.props.history.goBack} className="back-button" type="button">Back</button>} 
+            {<button onClick={this.props.history.goBack} className="back-button" type="button">Back</button>}
           </div>
         </div>
         <TripForm
@@ -125,15 +125,15 @@ class TripNew extends React.Component {
           titleText="Create a Trip"
         />
         <div className="button-container">
-                <div className="button-section">
-        <button
-          type='submit'
-          onClick={this.handleSubmit}
-          visibility='hidden'
-          className="submit-btn">
-            Add some more details</button>
-            </div>
-            </div>
+          <div className="button-section">
+            <button
+              type='submit'
+              onClick={this.handleSubmit}
+              visibility='hidden'
+              className="submit-btn">
+              Add some more details</button>
+          </div>
+        </div>
       </section>
     )
   }

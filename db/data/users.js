@@ -46,7 +46,7 @@ module.exports = [
     tripPrefs: ['sea', 'friends'],
     garage: 'Vauxhall Viva',
     dreamTrips: 'Through the center of Australia',
-    recentTrips: ['https://hips.hearstapps.com/esq.h-cdn.co/assets/15/41/1444408765-road-trip.jpg?resize=980:*', 'https://thetravelintern.com/wp-content/uploads/2018/12/Watching-Sea-Lions-at-Pier-39-SF-to-LA-Road-Trip-Itinerary.jpg']
+    recentTrips: ['https://hips.hearstapps.com/esq.h-cdn.co/assets/15/41/1444408765-road-trip.jpg?resize=980:*', 'https://www.visitportsmouth.co.uk/imageresizer/?image=%2Fdbimgs%2FPortsmouth%20resized.jpg&action=InspireMeSmall']
   }, {
     username: 'charizard',
     name: 'Charlotte Morgan',
@@ -70,7 +70,7 @@ module.exports = [
     tripPrefs: ['off road', 'camping'],
     garage: 'Honda CB500X',
     dreamTrips: 'West Coast New Zealand',
-    recentTrips: ['https://bloximages.newyork1.vip.townnews.com/sandiegomagazine.com/content/tncms/assets/v3/editorial/b/08/b087e7a7-d7a2-56c6-9df1-8d271c93e5e5/5e15057eac014.image.jpg?resize=786%2C525', 'https://media.frankandoak.com/media/assets/handbook/2019/07/roadtrip/4-roadtrip.jpg?imwidth=2000', 'https://amazon.clikpic.com/billycurrie/images/quiraing.jpg']
+    recentTrips: ['https://bloximages.newyork1.vip.townnews.com/sandiegomagazine.com/content/tncms/assets/v3/editorial/b/08/b087e7a7-d7a2-56c6-9df1-8d271c93e5e5/5e15057eac014.image.jpg?resize=786%2C525', 'https://amazon.clikpic.com/billycurrie/images/quiraing.jpg']
   }, {
     username: 'ledge',
     name: 'Guy Routledge',
@@ -102,11 +102,11 @@ module.exports = [
     password: 'pass',
     passwordConfirmation: 'pass',
     homeBase: 'Parliament Hill',
-    profilePhoto: ['https://external-preview.redd.it/x9KFqyzWq0XWBatQcHs9GhNmQAnjHRlairOuOb7-v7A.jpg?auto=webp&s=cc86733bdba4d47233c2db079dc4e83a3bd98b99'],
+    profilePhoto: ['https://external-preview.redd.it/x9KFqyzWq0XWBatQcHs9GhNmQAnjHRlairOuOb7-v7A.jpg?auto=webp&s=cc86733bdba4d47233c2db079dc4e83a3bd98b99', 'https://i.pinimg.com/originals/5a/65/ea/5a65eaedb7d4fbee14cc88a7ed64957c.jpg'],
     tripPrefs: ['camping', 'riverside', 'sports'],
     garage: 'Toyota Tundra',
     dreamTrips: 'All of the TransCanada Highway',
-    recentTrips: ['https://www.cicnews.com/2020/01/quebec-invited-305-skilled-worker-candidates-over-two-arrima-draws-0113473.html', 'https://muskokagetaway.com/wp-content/uploads/2018/03/muskoka.jpg', 'https://i.cbc.ca/1.3195090.1440006322!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/bison.jpg']
+    recentTrips: ['https://upload.wikimedia.org/wikipedia/commons/c/ca/Papineauville_QC_2.JPG', 'https://muskokagetaway.com/wp-content/uploads/2018/03/muskoka.jpg', 'https://i.cbc.ca/1.3195090.1440006322!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/bison.jpg']
   }, {
     username: 'Homer',
     name: 'Homer J Simpson',
@@ -126,7 +126,7 @@ module.exports = [
     password: 'pass',
     passwordConfirmation: 'pass',
     homeBase: 'NY, NY',
-    profilePhoto: ['https://vignette.wikia.nocookie.net/friends/images/4/48/Chandler_Bing_portrait.jpg/revision/latest?cb=20100601130820', 'https://cdn.pinkvilla.com/files/styles/contentpreview/public/chandler_bing_0.jpg?itok=2E55xFkh'],
+    profilePhoto: ['https://vignette.wikia.nocookie.net/friends/images/4/48/Chandler_Bing_portrait.jpg/revision/latest?cb=20100601130820', 'https://cdn.pinkvilla.com/files/styles/contentpreview/public/chandler_bing_0.jpg?itok=2E55xFkh', 'https://pm1.narvii.com/7065/1166dd72995d429b3a78d1d6f52b939063874076r1-518-592v2_uhq.jpg'],
     tripPrefs: ['friends'],
     garage: 'Ferrari F50',
     dreamTrips: 'Yemen',

@@ -17,26 +17,26 @@ class TripEdit extends React.Component {
       image: '',
       tags: [''],
       description: '',
-      startingPointCity:'',
-      startingPointState:'',
-      startingPointCountry:'',
-      endPointCity:'',
-      endPointState:'',
-      endPointCountry:'',
+      startingPointCity: '',
+      startingPointState: '',
+      startingPointCountry: '',
+      endPointCity: '',
+      endPointState: '',
+      endPointCountry: '',
       scenery: '',
       enjoyment: '',
-      distance:'',
-      timeOfYear:'',
-      highlights:''
+      distance: '',
+      timeOfYear: '',
+      highlights: ''
     },
     errors: {},
     tempTrip: {
-      startingPointCity:'',
-      startingPointState:'',
-      startingPointCountry:'',
-      endPointCity:'',
-      endPointState:'',
-      endPointCountry:'',
+      startingPointCity: '',
+      startingPointState: '',
+      startingPointCountry: '',
+      endPointCity: '',
+      endPointState: '',
+      endPointCountry: '',
     }
   }
 
@@ -44,8 +44,8 @@ class TripEdit extends React.Component {
     const tripId = this.props.match.params.id
     try {
       const res = await axios.get(`/api/trips/${tripId}`, withHeaders())
-      const tempTrip = { ...this.state.tempTrip, ...res.data}
-      this.setState({ formData: res.data , tempTrip})
+      const tempTrip = { ...this.state.tempTrip, ...res.data }
+      this.setState({ formData: res.data, tempTrip })
       console.log(this.state.tempTrip)
     } catch (err) {
       console.log(err)
@@ -71,12 +71,12 @@ class TripEdit extends React.Component {
 
   handleMapChange = e => {
     const tempTrip = { ...this.state.tempTrip, [e.target.name]: e.target.value }
-    this.setState({ tempTrip }) 
+    this.setState({ tempTrip })
   }
 
   handleTripSearch = () => {
-    const finalTrip = {...this.state.tempTrip}
-    const formData = {...this.state.formData , ...finalTrip}
+    const finalTrip = { ...this.state.tempTrip }
+    const formData = { ...this.state.formData, ...finalTrip }
     // console.log(state)
     this.setState({ formData })
   }
@@ -117,7 +117,7 @@ class TripEdit extends React.Component {
     const filteredIcons = icons.filter(icon => this.state.formData.tags.includes(icon.name))
     this.preloadCSS(filteredIcons)
 
-    
+
     return (
       <section>
         <div className="header">
@@ -125,24 +125,24 @@ class TripEdit extends React.Component {
             <Link to='/'><img className="nav-logo" alt="logo" src={RTimage} height="50" /></Link>
           </div>
           <div className="header-right">
-          {<button onClick={this.props.history.goBack} className="back-button" type="button">Back</button>} 
+            {<button onClick={this.props.history.goBack} className="back-button" type="button">Back</button>}
           </div>
         </div>
-          <TripFormExt
-            handleChange={this.handleChange}
-            handleSubmit={this.handleSubmit}
-            handleMapChange={this.handleMapChange}
-            handleMapSearch={this.handleMapSearch}
-            handleTripSearch={this.handleTripSearch}
-            addToTags={this.addToTags}
-            icons={icons}
-            visibility="hidden"
-            formData={this.state.formData}
-            tempTrip={this.state.tempTrip}
-            errors={this.state.errors}
-            titleText="Edit my Trip"
-            buttonText="Edit my Trip"
-          />
+        <TripFormExt
+          handleChange={this.handleChange}
+          handleSubmit={this.handleSubmit}
+          handleMapChange={this.handleMapChange}
+          handleMapSearch={this.handleMapSearch}
+          handleTripSearch={this.handleTripSearch}
+          addToTags={this.addToTags}
+          icons={icons}
+          visibility="hidden"
+          formData={this.state.formData}
+          tempTrip={this.state.tempTrip}
+          errors={this.state.errors}
+          titleText="Edit my Trip"
+          buttonText="Edit my Trip"
+        />
       </section>
     )
   }

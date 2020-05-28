@@ -11,7 +11,7 @@ const Error = () => (
         <Link to='/'><img className="nav-logo" alt="logo" src={RTimage} height="50" /></Link>
       </div>
       <div className="header-right">
-      {<button onClick={this.props.history.goBack} className="back-button" type="button">Back</button>} 
+        {<button onClick={this.props.history.goBack} className="back-button" type="button">Back</button>}
       </div>
     </div>
     <div className="container">

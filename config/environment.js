@@ -1,6 +1,8 @@
-const dbURI = 'mongodb://localhost/sei-group-project-3-db'
-const port = 8000
-const secret = 'its a secret'
+require('dotenv').config()
+
+const dbURI = process.env.DB_URI
+const port = process.env.PORT
+const secret = process.env.SECRET
 
 
 module.exports = {
@@ -8,3 +10,6 @@ module.exports = {
   port,
   secret
 }
+
+
+
