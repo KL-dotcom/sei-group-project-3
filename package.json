@@ -5,8 +5,10 @@
   "main": "/backend/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon",
-    "seed": "node db/seeds.js"
+    "start": "node index.js",
+    "seed": "node db/seeds.js",
+    "build": "cd frontend && yarn && yarn build",
+    "develop": "nodemon"
   },
   "repository": "git@github.com:A-Der/sei-group-project-3.git",
   "author": "Assia Deramchi <at.deramchi@gmail.com>",
