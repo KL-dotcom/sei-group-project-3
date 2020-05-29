@@ -31,8 +31,7 @@ const TripForm = ({ handleChange, handleSubmit, formData, buttonText, titleText,
                 </div>
               </div>
               {errors.name && <small>{errors.name}</small>}
-              {/* HANDLE MAP INPUTS -------------------------------------------------------------------
-//? STARTING POINT INPUTS ----------------------------- */}
+
 
               <div className="start">
                 <label className="sub-title"> Starting Point: </label>
@@ -49,7 +48,7 @@ const TripForm = ({ handleChange, handleSubmit, formData, buttonText, titleText,
                 {errors.startingPointCity && <small>{errors.startingPointCity}</small>}
 
                 <div className="form-item">
-                  {/* <label> Starting Point State: </label> */}
+
                   <br></br>
                   <input type="text"
                     className="input"
@@ -62,7 +61,7 @@ const TripForm = ({ handleChange, handleSubmit, formData, buttonText, titleText,
                 {errors.startingPointState && <small>{errors.startingPoinState}</small>}
 
                 <div className="form-item">
-                  {/* <label> Starting Point Country: </label> */}
+
                   <br></br>
                   <input type="text"
                     className="input"
@@ -77,7 +76,7 @@ const TripForm = ({ handleChange, handleSubmit, formData, buttonText, titleText,
 
 
 
-              {/* //? ENDING POINT INPUTS ----------------------------- */}
+
               <div className="end">
 
                 <label className="sub-title"> End Point: </label>
@@ -95,7 +94,7 @@ const TripForm = ({ handleChange, handleSubmit, formData, buttonText, titleText,
                 {errors.endPointCity && <small>{errors.endPointCity}</small>}
 
                 <div className="form-item">
-                  {/* <label> End Point State: </label> */}
+
                   <br></br>
                   <input type="text"
                     className="input"
@@ -108,7 +107,7 @@ const TripForm = ({ handleChange, handleSubmit, formData, buttonText, titleText,
                 {errors.endPointState && <small>{errors.endPointState}</small>}
 
                 <div className="form-item">
-                  {/* <label> End Point Country: </label> */}
+
                   <br></br>
                   <input type="text"
                     className="input"
@@ -140,8 +139,6 @@ const TripForm = ({ handleChange, handleSubmit, formData, buttonText, titleText,
             </div>
           </div>
 
-
-          {/* //* END OF MAP INPUTS ------------------------------------------------------------------- */}
 
           <form onSubmit={handleSubmit}>
 

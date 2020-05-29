@@ -2,8 +2,6 @@ import React from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
-// import { Carousel } from 'react-responsive-carousel'
-// import { stringUpdate } from '../../lib/map'
 import ReactTooltip from "react-tooltip"
 import { isAuthenticated, withHeaders, isOwner } from '../../lib/auth'
 import { icons } from "../../styles/assets/icon-data"
@@ -22,11 +20,7 @@ class tripShow extends React.Component {
     this.setState({ trip: res.data })
     console.log(this.state.trip.user._id)
 
-    // const startPoint = stringUpdate(this.state.trip.startingPoint)
-    // const endPoint = stringUpdate(this.state.trip.endPoint)
-    // const mapUrl = `https://open.mapquestapi.com/staticmap/v5/map?start=${startPoint}&end=${endPoint}&size=600,400@2x&key=2X2ei5QqYNRJ7InGpBh7UIRRYdKv5AsJ`
-    // const updated = { ...res.data, routeImage: mapUrl }
-    // this.setState({ trip: updated })
+
   }
   handleChange = e => {
     const text = e.target.value
@@ -134,29 +128,11 @@ class tripShow extends React.Component {
 
 
 
-              {/* <img
-                height="400"
-                src={trip.routeImage}
-              /> */}
+
             </div>
           </div>
           <div className="show-carousel">
-            {/* <Carousel
-              infiniteLoop
-              centerMode
-            >
-              <div>
-                <img src={trip.image}
-                  alt="map"
-                  className="image carousel-image route-image" />
-                <p className="legend"></p>
-              </div>
-              <div>
-                <img src={trip.routeImage}
-                  alt="trip"
-                  className="image carousel-image route-image" />
-              </div>
-            </Carousel> */}
+
           </div>
           <div className="comments-container">
             <div className="comments-title">
@@ -189,7 +165,7 @@ class tripShow extends React.Component {
         </section>
       </div>
     )
-    // }
+
   }
 }
 export default tripShow

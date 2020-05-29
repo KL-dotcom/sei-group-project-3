@@ -1,13 +1,13 @@
 import * as React from 'react';
-import {Component} from 'react';
-import {render} from 'react-dom';
-import MapGL, {Popup, NavigationControl, FullscreenControl, ScaleControl} from 'react-map-gl';
+import { Component } from 'react';
+import { render } from 'react-dom';
+import MapGL, { Popup, NavigationControl, FullscreenControl, ScaleControl } from 'react-map-gl';
 
 import ControlPanel from './control-panel';
 import Pins from './pins';
 import CityInfo from './city-info';
 
-// import CITIES from '../../.data/cities.json';
+
 
 const TOKEN = 'pk.eyJ1IjoiYnJvYm8xIiwiYSI6ImNrYTU2YWZ1aTAwNnozcHFrMjR3Ym1wbGEifQ.6oCNHwKPmFw0nOUHivbM9Q';
 
@@ -48,15 +48,15 @@ export default class App extends Component {
   }
 
   _updateViewport = viewport => {
-    this.setState({viewport});
+    this.setState({ viewport });
   };
 
   _onClickMarker = city => {
-    this.setState({popupInfo: city});
+    this.setState({ popupInfo: city });
   };
 
   _renderPopup() {
-    const {popupInfo} = this.state;
+    const { popupInfo } = this.state;
 
     return (
       popupInfo && (
@@ -66,7 +66,7 @@ export default class App extends Component {
           longitude={popupInfo.longitude}
           latitude={popupInfo.latitude}
           closeOnClick={false}
-          onClose={() => this.setState({popupInfo: null})}
+          onClose={() => this.setState({ popupInfo: null })}
         >
           <CityInfo info={popupInfo} />
         </Popup>
@@ -75,7 +75,7 @@ export default class App extends Component {
   }
 
   render() {
-    const {viewport} = this.state;
+    const { viewport } = this.state;
 
     return (
       <MapGL
@@ -86,7 +86,7 @@ export default class App extends Component {
         onViewportChange={this._updateViewport}
         mapboxApiAccessToken={TOKEN}
       >
-        {/* <Pins data={CITIES} onClick={this._onClickMarker} /> */}
+
 
         {this._renderPopup()}
 

@@ -26,7 +26,7 @@ class TripCard extends React.Component {
             <div className="crop">
               <img className="index-image"
                 src={image}
-                // src= {hover ? routeImage : image} 
+
                 alt={name}
                 style={{ size: "cover" }}
                 height="350"
