@@ -18,7 +18,7 @@ class tripShow extends React.Component {
     const tripId = this.props.match.params.id
     const res = await axios.get(`/api/trips/${tripId}`, withHeaders())
     this.setState({ trip: res.data })
-    console.log(this.state.trip.user._id)
+
 
 
   }
