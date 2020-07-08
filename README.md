@@ -28,7 +28,7 @@ Road Trippers is a social media site where users can create an account to share 
 
 * We decided to go for a feature heavy approach, aspiring to implement interactive maps, picture tags, messaging, recommendation etc. We wanted to be ambitious at the start of the project, as we know as long as MVP had been reached by the due date any features that were not completed could be cut from the project. We achieved most of what we originally set out to do, though one big feature we would have liked to implement would have been a news feed and we did not have time for this.
 
-* For styling, we decided not to use a framework, and instead used SCSS along with some packages to solve some of our bigger styling tasks, such as React Responsive Carousel to display the images and React Burger Menu for the sidebar navigation. We decided to use a bold, rugged colour palette on the project using the Yukon 1000 (yukon1000.org) site for inspiration.
+* For styling, we decided not to use a framework, and instead used SCSS along with some packages to solve some of our bigger styling tasks, such as React Responsive Carousel to display the images and React Burger Menu for the sidebar navigation. We decided to use a bold, rugged colour palette on the project using the Yukon 1000 (https://www.yukon1000.org/) site for inspiration.
 
 * We made a priority list for the features we wanted to implement, and each took ownership of the features we were most interested in. While it would have been better to collaboratively work on the features together in order to best share knowledge, we were concious of how little time we had to effectively deploy our goal site. We also had a deadline in mind to freeze any features that were not completed in time, so that we would still have a day to work on styling, seeds files and any remaining bugs.
 
@@ -62,7 +62,11 @@ An example of the messaging feature:
 
 ## Key Learnings
 
-This project was a great opportunity to learn how to work on a large project with other people, it came with it's own challenges (especially when it comes to things like version control). We all managed to work well together, and could effectively communicate when it came to asking for help and dividing up work.
+This project was a great opportunity to learn how to work on a large project with other people, and manage the challenges that is came with. 
+
+One of these challanges was version control, this was the first time for the class that we were in a group situation where this issue came up and we had to learn and adapt quickly. We used a development branch off the master branch in order to keep our work while the project was still being worked on, and used our own branches for the specific features we were working on, merging into the development branch regularly. Any merge conflicts were dealt with as a team if we did not know which version should be kept.
+
+We all managed to work well together, and could effectively communicate when it came to asking for help and dividing up work.
 
 ## Challenges and Wins
 
@@ -79,4 +83,4 @@ Working on this project really solidified my understanding of the relationship b
 ## Deployment
 
 This project was deployed using Heroku:
-road-trip-ga.herokuapp.com
+https://road-trip-ga.herokuapp.com/
