@@ -8,7 +8,7 @@ const commentSchema = new mongoose.Schema({
 })
 
 const messageSchema = new mongoose.Schema({
-  // text: { type: String, required: [true, 'field required'] },
+
   sender: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
   recipient: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
   comment: [commentSchema]
